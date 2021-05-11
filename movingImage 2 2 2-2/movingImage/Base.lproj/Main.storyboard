@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="movingImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k3G-EY-B60">
+                                <rect key="frame" x="66" y="40" width="48" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zlq-bH-tD9">
+                                <rect key="frame" x="59" y="371" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Left"/>
+                                <connections>
+                                    <action selector="left:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vIx-DV-nCy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dql-hU-5Te">
+                                <rect key="frame" x="171" y="371" width="36" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Right"/>
+                                <connections>
+                                    <action selector="right:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ct9-x0-xPL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="on4-mC-XzW">
+                                <rect key="frame" x="110" y="428" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Down"/>
+                                <connections>
+                                    <action selector="down:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gOt-S6-nkI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jue-jO-xGU">
+                                <rect key="frame" x="114" y="323" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="UP"/>
+                                <connections>
+                                    <action selector="up:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjd-Sg-64m"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VmY-ci-9Cy">
+                                <rect key="frame" x="65" y="139" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gI9-0u-ugu">
+                                <rect key="frame" x="254" y="428" width="93" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.10496520937730713" blue="0.60182793335158524" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fV1-7T-Kgj">
+                                <rect key="frame" x="291" y="48" width="47" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NAn-ha-qBc">
+                                <rect key="frame" x="291" y="163" width="47" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZLZ-6I-Xg3">
+                                <rect key="frame" x="195" y="48" width="48" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="t5V-Qk-GUA">
+                                <rect key="frame" x="195" y="165" width="47" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="apple1" destination="ZLZ-6I-Xg3" id="vyp-9p-oeA"/>
+                        <outlet property="apple2" destination="fV1-7T-Kgj" id="96X-Bw-m4x"/>
+                        <outlet property="apple3" destination="t5V-Qk-GUA" id="FTc-XW-fk0"/>
+                        <outlet property="apple4" destination="NAn-ha-qBc" id="2fF-u3-Z5h"/>
+                        <outlet property="bananaImage" destination="VmY-ci-9Cy" id="60o-hE-dNu"/>
+                        <outlet property="db" destination="on4-mC-XzW" id="GsY-cP-eQI"/>
+                        <outlet property="lb" destination="Zlq-bH-tD9" id="Gef-ek-Gbs"/>
+                        <outlet property="monkey" destination="k3G-EY-B60" id="P1T-cf-CVj"/>
+                        <outlet property="rb" destination="dql-hU-5Te" id="zjg-dT-AOn"/>
+                        <outlet property="timelabel" destination="gI9-0u-ugu" id="6Vl-tA-o2q"/>
+                        <outlet property="upb" destination="jue-jO-xGU" id="tNj-AI-oa8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.5" y="180.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple1.jpg" width="225" height="225"/>
+        <image name="apple2.jpg" width="231" height="218"/>
+        <image name="apple3.jpg" width="225" height="225"/>
+        <image name="apple4.jpg" width="225" height="225"/>
+    </resources>
+</document>
